@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Skills</h1>
+    <ul>
+    <% skills.forEach( skill => { %>
+      <a href="/skills/<%= skill.id %>"><%= skill.skill %></a>
+    <% }); %>
+    </ul>
+</body>
+</html>
