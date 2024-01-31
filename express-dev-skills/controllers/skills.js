@@ -33,7 +33,7 @@ const updateSkill = (req, res) => {
   let id = req.params.id
   let updatedSkill = req.body.skill
   Skill.updateOne(id, updatedSkill)
-  res.redirect('/skills')
+  res.redirect('/skills/' + id)
 }
 module.exports = {
   index,
